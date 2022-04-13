@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Tee Shirt Palace</title>
+     <!-- css -->
+     <link rel="stylesheet" href="./scss/style.css" />
+    <!-- font awesome icon cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Bootstrap cdn    -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <!-- font-hiragino -->
+    <script src="./javascript/hiragino-font.js"></script>
+
+    <link rel="stylesheet" href="./OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+   
+</head>
+
+<body>
+
+    <header>
+
+        <div class="header container">
+            <img src="./images/logo-main.png" class="header-logo" alt="main-logo" />
+           
+            <nav class="header-nav" id="navMenu">
+                <a class="close" id="close"  onclick="menuClose()">
+                    <i class="fas fa-close"></i>
+                </a>
+                <ul class="header-nav-wrapper">
+                    <li class="header-nav-link"><a href="#">TRENDING TOPICS</a></li>
+                    <li class="header-nav-link"><a href="#">WOMAN</a></li>
+                    <li class="header-nav-link"><a href="#">MAN</a></li>
+                    <li class="header-nav-link"><a href="#">GIRLS</a></li>
+                    <li class="header-nav-link"><a href="#">BOYS</a></li>
+                    <li class="header-nav-link"><a href="#">HOME AND LIVING</a></li>
+                </ul>
+                <form class="header-search">
+                    <img src="./images/search-logo.png" alt="header-search-icon" class="header-search-icon" />
+                </form>
+                <ul class="header-profile">
+                    <li class="header-profile-like">
+                        <a href="#"><img src="./images/like.png" class="header-profile-like-img" alt="like" />
+                            <span class="header-profile-like-badge"> 99 </span>
+                        </a>
+                    </li>
+                    <li class="header-profile-like">
+                        <a href="#"><img src="./images/shopping-bag.png" class="header-profile-like-img"
+                                alt="shopping-bag" />
+                            <span class="header-profile-like-badge"> 99 </span></a>
+                    </li>
+                    <li class="header-profile-like">
+                        <a href="#"><img src="./images/user.png" class="header-profile-like-img" alt="user" />
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <a class="menu" id="menu" onclick="menuOpen()">
+                <i class="fas fa-bars"></i>
+            </a>
+        </div>
+    </header>
+    <!-- create section -->
+
+     <section class="create container">
+        <div class="create__left">
+            <div class="create__left-card">
+                <img src="./images/create-coffee.png" class="create__left-card-img" alt="coffee code image" />
+                <div class="create__left-card-desc">
+                    <img src="./images/create-icon.png" alt="brush create-icon" class="create__left-card-desc-icon" />
+                    <span class="create__left-card-desc-title">Create</span>
+                </div>
+            </div>
+        </div>
+        <div class="create__right">
+            <div class="create__right-small">
+                <div class="caption">
+                    <img src="./images/caption-boy.svg" class="caption-img" alt="small boy" />
+                    <div class="caption-desc">
+                        <div class="caption-desc-icon">
+                            <i class="fa fa-arrow-down"></i>
+                        </div>
+                        <div class="caption-desc-title">
+                            <h3 class="caption-desc-title-heading">the caption edit</h3>
+                            <span class="caption-desc-title-info">discover the collection</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="caption">
+                    <img src="./images/caption-boy.svg" class="caption-img" alt="small boy" />
+                    <div class="caption-desc">
+                        <div class="caption-desc-icon">
+                            <i class="fa fa-arrow-down"></i>
+                        </div>
+                        <div class="caption-desc-title">
+                            <h3 class="caption-desc-title-heading">the caption edit</h3>
+                            <h4 class="caption-desc-title-info">discover the collection</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="create__right-large">
+                <div class="caption">
+                    <img src="./images/caption-girl.png" class="caption-img" alt="girl" />
+                    <div class="caption-desc">
+                        <div class="caption-desc-icon">
+                            <i class="fa fa-arrow-down"></i>
+                        </div>
+                        <div class="caption-desc-title">
+                            <h3 class="caption-desc-title-heading">the caption edit</h3>
+                            <span class="caption-desc-title-info">discover the collection</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+        <section class="shop-container row">
+            <div class="col-6 col-md-4 shop-card">
+                <img src="./images/shop-boy.png" class="shop-card-img" alt="shop boy" />
+                <div class="shop-card-desc">
+                    <img src="./images/shirt-icon.png" class="shop-card-desc-icon" alt="shirt icon" />
+                    <h3 class="shop-card-desc-title">&nbsp;kids</h3>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 shop-card">
+                <img src="./images/shop-boy.png" class="shop-card-img" alt="shop boy" />
+                <div class="shop-card-desc">
+                    <img src="./images/shirt-icon.png" class="shop-card-desc-icon" alt="shirt icon" />
+                    <h3 class="shop-card-desc-title">&nbsp;kids</h3>
+                </div>
+            </div>
+            <div class="col-6 col-md-4  shop-card">
+                <img src="./images/shop-boy.png" class="shop-card-img" alt="shop boy" />
+                <div class="shop-card-desc">
+                    <img src="./images/shirt-icon.png" class="shop-card-desc-icon" alt="shirt icon" />
+                    <h3 class="shop-card-desc-title">&nbsp;kids</h3>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 shop-card">
+                <img src="./images/shop-boy.png" class="shop-card-img" alt="shop boy" />
+                <div class="shop-card-desc">
+                    <img src="./images/shirt-icon.png" class="shop-card-desc-icon" alt="shirt icon" />
+                    <h3 class="shop-card-desc-title">&nbsp;kids</h3>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 shop-card">
+                <img src="./images/shop-boy.png" class="shop-card-img" alt="shop boy" />
+                <div class="shop-card-desc">
+                    <img src="./images/shirt-icon.png" class="shop-card-desc-icon" alt="shirt icon" />
+                    <h3 class="shop-card-desc-title">&nbsp;kids</h3>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 shop-card">
+                <img src="./images/shop-boy.png" class="shop-card-img" alt="shop boy" />
+                <div class="shop-card-desc">
+                    <img src="./images/shirt-icon.png" class="shop-card-desc-icon" alt="shirt icon" />
+                    <h3 class="shop-card-desc-title">&nbsp;kids</h3>
+                </div>
+            </div>
+    
+    </section>  
+    
+     <!-- <section class="stripe container">
+        <div class="stripe-container">
+        </div>
+    </section>  -->
+     <section class="featured container">
+        <h3 class="featured-heading">Featured Products</h3>
+
+        <div class="row">
+            <div class="col-12 col-sm-6 col-md-4  col-lg-3 shirt-card">
+                <svg xmlns="http://www.w3.org/2000/svg" width="15.78" height="13.734" viewBox="0 0 15.78 13.734">
+                    <g id="TSP_Wishlist" transform="translate(-5 -10.83)" opacity="0.35">
+                        <path id="Path_6121" data-name="Path 6121"
+                            d="M16.523,10.831a4.258,4.258,0,0,0-3.633,2.038A4.257,4.257,0,0,0,5,15.088c0,4.325,7.349,9.2,7.662,9.408a.415.415,0,0,0,.456,0c.313-.206,7.662-5.083,7.662-9.408A4.261,4.261,0,0,0,16.523,10.831Z"
+                            transform="translate(0 0)" fill="#191717" opacity="0.995" />
+                    </g>
+                </svg>
+
+                <div class="shirt-card__img-con">
+                    <img src="./images/shirt.png" class="shirt-card__img-con__img" alt="t-shit blue" />
+                    <div class="shirt-card__img-con-add">
+                        <span class="icon-shopping-bag"></span>
+                        &nbsp; ADD TO BAG
+                    </div>
+                </div>
+                <div class="shirt-card-desc">
+                    <div class="shirt-card-desc-color">
+                        <div class="box box-black"></div>
+                        <div class="box box-green"></div>
+                        <div class="box box-red"></div>
+                        + 15 Colors
+                    </div>
+                    <p>Gay Agenda Funny T-shirt</p>
+                    <span>$ 25.99</span>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4  col-lg-3 shirt-card">
+                <svg xmlns="http://www.w3.org/2000/svg" width="15.78" height="13.734" viewBox="0 0 15.78 13.734">
+                    <g id="TSP_Wishlist" transform="translate(-5 -10.83)" opacity="0.35">
+                        <path id="Path_6121" data-name="Path 6121"
+                            d="M16.523,10.831a4.258,4.258,0,0,0-3.633,2.038A4.257,4.257,0,0,0,5,15.088c0,4.325,7.349,9.2,7.662,9.408a.415.415,0,0,0,.456,0c.313-.206,7.662-5.083,7.662-9.408A4.261,4.261,0,0,0,16.523,10.831Z"
+                            transform="translate(0 0)" fill="#191717" opacity="0.995" />
+                    </g>
+                </svg>
+
+                <div class="shirt-card__img-con">
+                    <img src="./images/shirt.png" class="shirt-card__img-con__img" alt="t-shit blue" />
+                    <div class="shirt-card__img-con-add">
+                        <span class="icon-shopping-bag"></span>
+                        &nbsp; ADD TO BAG
+                    </div>
+                </div>
+                <div class="shirt-card-desc">
+                    <div class="shirt-card-desc-color">
+                        <div class="box box-black"></div>
+                        <div class="box box-green"></div>
+                        <div class="box box-red"></div>
+                        + 15 Colors
+                    </div>
+                    <p>Gay Agenda Funny T-shirt</p>
+                    <span>$ 25.99</span>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4  col-lg-3 shirt-card">
+                <svg xmlns="http://www.w3.org/2000/svg" width="15.78" height="13.734" viewBox="0 0 15.78 13.734">
+                    <g id="TSP_Wishlist" transform="translate(-5 -10.83)" opacity="0.35">
+                        <path id="Path_6121" data-name="Path 6121"
+                            d="M16.523,10.831a4.258,4.258,0,0,0-3.633,2.038A4.257,4.257,0,0,0,5,15.088c0,4.325,7.349,9.2,7.662,9.408a.415.415,0,0,0,.456,0c.313-.206,7.662-5.083,7.662-9.408A4.261,4.261,0,0,0,16.523,10.831Z"
+                            transform="translate(0 0)" fill="#191717" opacity="0.995" />
+                    </g>
+                </svg>
+
+                <div class="shirt-card__img-con">
+                    <img src="./images/shirt.png" class="shirt-card__img-con__img" alt="t-shit blue" />
+                    <div class="shirt-card__img-con-add">
+                        <span class="icon-shopping-bag"></span>
+                        &nbsp; ADD TO BAG
+                    </div>
+                </div>
+                <div class="shirt-card-desc">
+                    <div class="shirt-card-desc-color">
+                        <div class="box box-black"></div>
+                        <div class="box box-green"></div>
+                        <div class="box box-red"></div>
+                        + 15 Colors
+                    </div>
+                    <p>Gay Agenda Funny T-shirt</p>
+                    <span>$ 25.99</span>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4  col-lg-3 shirt-card">
+                <svg xmlns="http://www.w3.org/2000/svg" width="15.78" height="13.734" viewBox="0 0 15.78 13.734">
+                    <g id="TSP_Wishlist" transform="translate(-5 -10.83)" opacity="0.35">
+                        <path id="Path_6121" data-name="Path 6121"
+                            d="M16.523,10.831a4.258,4.258,0,0,0-3.633,2.038A4.257,4.257,0,0,0,5,15.088c0,4.325,7.349,9.2,7.662,9.408a.415.415,0,0,0,.456,0c.313-.206,7.662-5.083,7.662-9.408A4.261,4.261,0,0,0,16.523,10.831Z"
+                            transform="translate(0 0)" fill="#191717" opacity="0.995" />
+                    </g>
+                </svg>
+
+                <div class="shirt-card__img-con">
+                    <img src="./images/shirt.png" class="shirt-card__img-con__img" alt="t-shit blue" />
+                    <div class="shirt-card__img-con-add">
+                        <span class="icon-shopping-bag"></span>
+                        &nbsp; ADD TO BAG
+                    </div>
+                </div>
+                <div class="shirt-card-desc">
+                    <div class="shirt-card-desc-color">
+                        <div class="box box-black"></div>
+                        <div class="box box-green"></div>
+                        <div class="box box-red"></div>
+                        + 15 Colors
+                    </div>
+                    <p>Gay Agenda Funny T-shirt</p>
+                    <span>$ 25.99</span>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4  col-lg-3 shirt-card">
+                <svg xmlns="http://www.w3.org/2000/svg" width="15.78" height="13.734" viewBox="0 0 15.78 13.734">
+                    <g id="TSP_Wishlist" transform="translate(-5 -10.83)" opacity="0.35">
+                        <path id="Path_6121" data-name="Path 6121"
+                            d="M16.523,10.831a4.258,4.258,0,0,0-3.633,2.038A4.257,4.257,0,0,0,5,15.088c0,4.325,7.349,9.2,7.662,9.408a.415.415,0,0,0,.456,0c.313-.206,7.662-5.083,7.662-9.408A4.261,4.261,0,0,0,16.523,10.831Z"
+                            transform="translate(0 0)" fill="#191717" opacity="0.995" />
+                    </g>
+                </svg>
+
+                <div class="shirt-card__img-con">
+                    <img src="./images/shirt.png" class="shirt-card__img-con__img" alt="t-shit blue" />
+                    <div class="shirt-card__img-con-add">
+                        <span class="icon-shopping-bag"></span>
+                        &nbsp; ADD TO BAG
+                    </div>
+                </div>
+                <div class="shirt-card-desc">
+                    <div class="shirt-card-desc-color">
+                        <div class="box box-black"></div>
+                        <div class="box box-green"></div>
+                        <div class="box box-red"></div>
+                        + 15 Colors
+                    </div>
+                    <p>Gay Agenda Funny T-shirt</p>
+                    <span>$ 25.99</span>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4  col-lg-3 shirt-card">
+                <svg xmlns="http://www.w3.org/2000/svg" width="15.78" height="13.734" viewBox="0 0 15.78 13.734">
+                    <g id="TSP_Wishlist" transform="translate(-5 -10.83)" opacity="0.35">
+                        <path id="Path_6121" data-name="Path 6121"
+                            d="M16.523,10.831a4.258,4.258,0,0,0-3.633,2.038A4.257,4.257,0,0,0,5,15.088c0,4.325,7.349,9.2,7.662,9.408a.415.415,0,0,0,.456,0c.313-.206,7.662-5.083,7.662-9.408A4.261,4.261,0,0,0,16.523,10.831Z"
+                            transform="translate(0 0)" fill="#191717" opacity="0.995" />
+                    </g>
+                </svg>
+
+                <div class="shirt-card__img-con">
+                    <img src="./images/shirt.png" class="shirt-card__img-con__img" alt="t-shit blue" />
+                    <div class="shirt-card__img-con-add">
+                        <span class="icon-shopping-bag"></span>
+                        &nbsp; ADD TO BAG
+                    </div>
+                </div>
+                <div class="shirt-card-desc">
+                    <div class="shirt-card-desc-color">
+                        <div class="box box-black"></div>
+                        <div class="box box-green"></div>
+                        <div class="box box-red"></div>
+                        + 15 Colors
+                    </div>
+                    <p>Gay Agenda Funny T-shirt</p>
+                    <span>$ 25.99</span>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4  col-lg-3 shirt-card">
+                <svg xmlns="http://www.w3.org/2000/svg" width="15.78" height="13.734" viewBox="0 0 15.78 13.734">
+                    <g id="TSP_Wishlist" transform="translate(-5 -10.83)" opacity="0.35">
+                        <path id="Path_6121" data-name="Path 6121"
+                            d="M16.523,10.831a4.258,4.258,0,0,0-3.633,2.038A4.257,4.257,0,0,0,5,15.088c0,4.325,7.349,9.2,7.662,9.408a.415.415,0,0,0,.456,0c.313-.206,7.662-5.083,7.662-9.408A4.261,4.261,0,0,0,16.523,10.831Z"
+                            transform="translate(0 0)" fill="#191717" opacity="0.995" />
+                    </g>
+                </svg>
+
+                <div class="shirt-card__img-con">
+                    <img src="./images/shirt.png" class="shirt-card__img-con__img" alt="t-shit blue" />
+                    <div class="shirt-card__img-con-add">
+                        <span class="icon-shopping-bag"></span>
+                        &nbsp; ADD TO BAG
+                    </div>
+                </div>
+                <div class="shirt-card-desc">
+                    <div class="shirt-card-desc-color">
+                        <div class="box box-black"></div>
+                        <div class="box box-green"></div>
+                        <div class="box box-red"></div>
+                        + 15 Colors
+                    </div>
+                    <p>Gay Agenda Funny T-shirt</p>
+                    <span>$ 25.99</span>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4  col-lg-3 shirt-card">
+                <svg xmlns="http://www.w3.org/2000/svg" width="15.78" height="13.734" viewBox="0 0 15.78 13.734">
+                    <g id="TSP_Wishlist" transform="translate(-5 -10.83)" opacity="0.35">
+                        <path id="Path_6121" data-name="Path 6121"
+                            d="M16.523,10.831a4.258,4.258,0,0,0-3.633,2.038A4.257,4.257,0,0,0,5,15.088c0,4.325,7.349,9.2,7.662,9.408a.415.415,0,0,0,.456,0c.313-.206,7.662-5.083,7.662-9.408A4.261,4.261,0,0,0,16.523,10.831Z"
+                            transform="translate(0 0)" fill="#191717" opacity="0.995" />
+                    </g>
+                </svg>
+
+                <div class="shirt-card__img-con">
+                    <img src="./images/shirt.png" class="shirt-card__img-con__img" alt="t-shit blue" />
+                    <div class="shirt-card__img-con-add">
+                        <span class="icon-shopping-bag"></span>
+                        &nbsp; ADD TO BAG
+                    </div>
+                </div>
+                <div class="shirt-card-desc">
+                    <div class="shirt-card-desc-color">
+                        <div class="box box-black"></div>
+                        <div class="box box-green"></div>
+                        <div class="box box-red"></div>
+                        + 15 Colors
+                    </div>
+                    <p>Gay Agenda Funny T-shirt</p>
+                    <span>$ 25.99</span>
+                </div>
+            </div>
+        </div>
+    </section> 
+
+     <section class="idea">
+        <div class="idea-container">
+            <div class="blank"></div>
+            <div class="idea-your">
+                <img src="./images/idea-main.jpg" class="idea-your-img" alt="your idea" />
+                <p class="idea-your-title">Your T-shirt your Idea!</p>
+            </div>
+
+            <div class="idea-desc">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut. Lorem ipsum dolor
+                </p>
+                <a href="#" class="idea-btn">design now</a>
+            </div>
+        </div>
+    </section> 
+
+     <section class="service">
+        <div class="row gy-3 gx-3 text-white service-container">
+            <div class="col-sm-6">
+                <div class="service-card w-100 h-100 p-3 bg-idea">
+                    <img src="./images/service-hand.png" alt="service-hand" />
+                    <h4 class="service-title">High Quality Standards</h4>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="service-card w-100 h-100 p-3 bg-white shadow-lg">
+                    <img src="./images/service-certify.png" alt="service-certify" />
+                    <h4 class="service-title text-idea">Official Licensed Apparel</h4>
+                    <p class="service-card-info text-dark">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod tempor incididunt ut
+                    </p>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="service-card w-100 h-100 p-3 bg-idea">
+                    <img src="./images/service-emoji.png" alt="service-emoji" />
+                    <h4 class="service-title">Guaranteed Satisfaction</h4>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="service-card w-100 h-100 p-3 bg-idea">
+                    <img src="./images/service-tele.png" alt="service-tele" />
+                    <h4 class="service-title">Amazing Customer Experience</h4>
+                </div>
+            </div>
+        </div>
+    </section> 
+
+     <section class="join">
+        <form class="join-form container">
+            <h3 class="join-form-title">All of deals and updates in your inbox</h3>
+            <input type="email" class="join-form-input" placeholder="Enter Email" />
+            <button type="submit" class="join-form-btn">JOIN US</button>
+        </form>
+    </section> 
+    <section class="tshirt">
+        <div class="container">
+            <div class="tshirt-desc">
+                <p class="tshirt-desc-info">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting
+                    industry. Lorem Ipsum has been the industry's standard dummy text
+                    ever since the 1500s,
+                </p>
+            </div>
+            <div class="tshirt-title">
+                <h2 class="tshirt-title-heading text-white">T-SHIRT</h2>
+                <h2 class="tshirt-title-heading text-dark">OF THE WEEK</h2>
+                <button class="tshirt-title-btn bg-dark text-white">shop now</button>
+            </div>
+        </div>
+    </section>
+     <section class="unique">
+        <div class="container">
+            <img src="./images/unique-girl.png" alt="girl unique" class="unique-img" />
+            <div class="unique-info">
+                <h3 class="unique-info-title">
+                    Unique and Funny T-Shirts for Men, Women, Ki, and Babies
+                </h3>
+                <p class="unique-info-desc">
+                    Welcome to TeeShirtPalace, where our mission is simple: to help you
+                    show your personality, pride and style through what you wear. With
+                    our huge assortment of officially licensed T-shirts and apparel
+                    honoring all your favorite franchises such as Marvel, DC Comics,
+                    Star Wars, Harry Potter and more, plus TV shows, holidays, celebs,
+                    cartoons and even binge-worthy foods, you’re sure to find something
+                    that speaks to — and for — you! At TeeShirtPalace, our name says it
+                </p>
+                <button class="unique-info-btn">
+                    READ MORE
+                </button>
+            </div>
+        </div>
+    </section> 
+     <section class="buy">
+        <div class="container">
+            <h4 class="buy-heading">
+                QUICK BUY
+            </h4>
+        </div>
+        <div class="buy-scroll">
+            <div class="buy-clothes">
+                <img src="./images/shirt-buy.png" class="buy-clothes-img" alt=" shirt icon">
+                <span class="buy-clothes-title">
+                    t-shirt
+                </span>
+            </div>
+
+            <div class="buy-clothes">
+                <img src="./images/shirt-buy.png" class="buy-clothes-img" alt=" shirt icon">
+                <span class="buy-clothes-title">
+                    t-shirt
+                </span>
+            </div>   <div class="buy-clothes">
+                <img src="./images/shirt-buy.png" class="buy-clothes-img" alt=" shirt icon">
+                <span class="buy-clothes-title">
+                    t-shirt
+                </span>
+            </div>   <div class="buy-clothes">
+                <img src="./images/shirt-buy.png" class="buy-clothes-img" alt=" shirt icon">
+                <span class="buy-clothes-title">
+                    t-shirt
+                </span>
+            </div>   <div class="buy-clothes">
+                <img src="./images/shirt-buy.png" class="buy-clothes-img" alt=" shirt icon">
+                <span class="buy-clothes-title">
+                    t-shirt
+                </span>
+            </div>   <div class="buy-clothes">
+                <img src="./images/shirt-buy.png" class="buy-clothes-img" alt=" shirt icon">
+                <span class="buy-clothes-title">
+                    t-shirt
+                </span>
+            </div>   <div class="buy-clothes">
+                <img src="./images/shirt-buy.png" class="buy-clothes-img" alt=" shirt icon">
+                <span class="buy-clothes-title">
+                    t-shirt
+                </span>
+            </div>   <div class="buy-clothes">
+                <img src="./images/shirt-buy.png" class="buy-clothes-img" alt=" shirt icon">
+                <span class="buy-clothes-title">
+                    t-shirt
+                </span>
+            </div>   <div class="buy-clothes">
+                <img src="./images/shirt-buy.png" class="buy-clothes-img" alt=" shirt icon">
+                <span class="buy-clothes-title">
+                    t-shirt
+                </span>
+            </div>   <div class="buy-clothes">
+                <img src="./images/shirt-buy.png" class="buy-clothes-img" alt=" shirt icon">
+                <span class="buy-clothes-title">
+                    t-shirt
+                </span>
+            </div>   <div class="buy-clothes">
+                <img src="./images/shirt-buy.png" class="buy-clothes-img" alt=" shirt icon">
+                <span class="buy-clothes-title">
+                    t-shirt
+                </span>
+            </div>   <div class="buy-clothes">
+                <img src="./images/shirt-buy.png" class="buy-clothes-img" alt=" shirt icon">
+                <span class="buy-clothes-title">
+                    t-shirt
+                </span>
+            </div>   <div class="buy-clothes">
+                <img src="./images/shirt-buy.png" class="buy-clothes-img" alt=" shirt icon">
+                <span class="buy-clothes-title">
+                    t-shirt
+                </span>
+            </div>   <div class="buy-clothes">
+                <img src="./images/shirt-buy.png" class="buy-clothes-img" alt=" shirt icon">
+                <span class="buy-clothes-title">
+                    t-shirt
+                </span>
+            </div>
+        </div>
+       
+    </section> 
+     <div class="red-bg"></div> 
+     <footer class="footer">
+        <div class="footer-con">
+            <div class="footer-link-con">
+                <h5 class="footer-link-heading">QUICK SHOP</h5>
+                <a href="">CLOTHING</a>
+                <a href="">COFFEE MUGS</a>
+                <a href="">HEAD GEAR</a>
+                <a href="">HOME & BATH</a>
+                <a href="">PINS & MAGNETS</a>
+                <a href="">SITE MAP +</a>
+            </div>
+            <div class="footer-link-con">
+                <h5 class="footer-link-heading">create</h5>
+                <a href="">CLOTHING</a>
+                <a href="">COFFEE MUGS</a>
+                <a href="">HATS</a>
+                <a href="">BAGS</a>
+                <a href="">view all +</a>
+            </div>
+            <div class="footer-link-con">
+                <h5 class="footer-link-heading">COMPANY</h5>
+                <a href="">ABOUT US</a>
+                <a href="">BLOG</a>
+                <a href="">NEWSLETTER</a>
+               
+            </div>
+            <div class="footer-link-con">
+                <h5 class="footer-link-heading">HELP</h5>
+                <a href="">APPAREL SIZING</a>
+                <a href="">FAQ’s</a>
+                <a href="">COFFEE MUGS</a>
+                <a href="">SHIPPING & RETURNS</a>
+                <a href="">CONTACT US</a>
+               
+            </div>
+            <div class="footer-link-con">
+                <h5 class="footer-link-heading">TERMS</h5>
+                <a href="">PRIVACY POLICY</a>
+                <a href="">CONTENT USAGE POLICY</a>
+                <a href="">INTELLECTUAL PROPERTY POLICY</a>
+              
+            </div>
+            <div class="footer-link-con">
+                <div class="footer-link-icons">
+                    <img src="./images/instagram.png" alt="instagram">
+                    <img src="./images/instagram.png" alt="instagram">
+                    <img src="./images/instagram.png" alt="instagram">
+                    <img src="./images/instagram.png" alt="instagram">
+
+                </div>
+                <img src="./images/google-img.png" alt="google-img">
+            
+              
+            </div>
+        </div>
+        <div class="footer-con">
+            <div class="footer-card">
+                <img src="./images//footer-card.png" alt="footer card">
+                <img src="./images//footer-card.png" alt="footer card">
+                <img src="./images//footer-card.png" alt="footer card">
+                <img src="./images//footer-card.png" alt="footer card">
+                <img src="./images//footer-card.png" alt="footer card">
+                <img src="./images//footer-card.png" alt="footer card">
+                <img src="./images//footer-card.png" alt="footer card">
+
+            </div>
+            <p class="footer-copyright">
+                Copyright     2019 - Tee Shirt Palace
+            </p>
+        </div>
+
+    </footer> 
+    <!-- <div class="owl-carousel owl-theme container">
+        <div class="card"> Your Content </div>
+        <div class="card"> Your Content </div>
+        <div class="card"> Your Content </div>
+        <div class="card"> Your Content </div>
+        <div class="card"> Your Content </div>
+
+     
+      </div>
+       -->
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+        integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+        <script src="./OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+
+        <script src="./javascript/main.js"></script>
+
+</body>
+
+</html>
